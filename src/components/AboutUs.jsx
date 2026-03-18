@@ -2,8 +2,73 @@ import gymLogo from "../img/ful-gym.jpg";
 
 export default function AboutUs() {
   return (
-    <div>
+    <div style={{ position: "relative" }}>
+      {/* Responsive styles */}
+      <style>{`
+        @media (max-width: 900px) {
+          .aboutus-title, .aboutus-h1, .aboutus-since, .aboutus-story {
+            margin-left: 24px !important;
+          }
+          .aboutus-flex {
+            flex-direction: column !important;
+            margin-top: 40px !important;
+          }
+          .aboutus-right {
+            margin-left: 0 !important;
+            margin-top: 32px !important;
+            align-items: flex-start !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .aboutus-title {
+            font-size: 15px !important;
+            margin-top: 40px !important;
+            margin-left: 12px !important;
+          }
+          .aboutus-h1 {
+            font-size: 28px !important;
+            margin-left: 12px !important;
+          }
+          .aboutus-since {
+            font-size: 20px !important;
+            margin-left: 12px !important;
+          }
+          .aboutus-story {
+            font-size: 14px !important;
+            margin-left: 12px !important;
+            max-width: 95vw !important;
+          }
+          .aboutus-flex {
+            flex-direction: column !important;
+            margin-top: 24px !important;
+          }
+          .aboutus-right {
+            margin-left: 0 !important;
+            margin-top: 24px !important;
+            align-items: flex-start !important;
+          }
+          .aboutus-img {
+            width: 90vw !important;
+            height: 180px !important;
+            min-width: 0 !important;
+            min-height: 0 !important;
+            margin-left: 10px !important;
+
+          }
+          .aboutus-badge {
+            left: 0 !important;
+            top: 10px !important;
+            padding: 10px 18px !important;
+            font-size: 14px !important;
+          }
+          .aboutus-advantage {
+            padding: 18px 0 18px 18px !important;
+            max-width: 95vw !important;
+          }
+        }
+      `}</style>
       <p
+        className="aboutus-title"
         style={{
           color: "#C99B13",
           fontFamily: "Inter, sans-serif",
@@ -16,6 +81,7 @@ export default function AboutUs() {
         Our Story
       </p>
       <h1
+        className="aboutus-h1"
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 700,
@@ -28,6 +94,7 @@ export default function AboutUs() {
         <span style={{ color: "#fff" }}>Results</span>
       </h1>
       <p
+        className="aboutus-since"
         style={{
           color: "#C99B13",
           fontFamily: "Inter, sans-serif",
@@ -39,6 +106,7 @@ export default function AboutUs() {
         Since 2023
       </p>
       <div
+        className="aboutus-story"
         style={{
           color: "#ffffff",
           fontFamily: "Inter, sans-serif",
@@ -70,6 +138,7 @@ export default function AboutUs() {
         </span>
       </div>
       <div
+        className="aboutus-flex"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -79,10 +148,9 @@ export default function AboutUs() {
           width: "100%",
         }}
       >
-        {/* Left content ... (your existing code) */}
-
         {/* Right content */}
         <div
+          className="aboutus-right"
           style={{
             flex: 1,
             display: "flex",
@@ -100,6 +168,7 @@ export default function AboutUs() {
           >
             {/* Badge */}
             <div
+              className="aboutus-badge"
               style={{
                 position: "absolute",
                 top: 20,
@@ -126,6 +195,7 @@ export default function AboutUs() {
             </div>
             {/* Image */}
             <img
+              className="aboutus-img"
               src={gymLogo}
               alt="Gym"
               style={{
@@ -140,6 +210,7 @@ export default function AboutUs() {
           </div>
           {/* Advantage Section */}
           <div
+            className="aboutus-advantage"
             style={{
               background: "transparent",
               borderLeft: "3px solid #C99B13",
