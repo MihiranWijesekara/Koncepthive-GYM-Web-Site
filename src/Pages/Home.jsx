@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 
@@ -10,6 +11,7 @@ function Home() {
     >
       <Navbar />
       <HeroSection />
+      <AboutUs />
       {/* <div style={{ textAlign: "center", marginTop: "60px" }}>
         <h1>Welcome to the Home Page</h1>
         <p>This is a simple UI built with React.</p>
