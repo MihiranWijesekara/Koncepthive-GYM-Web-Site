@@ -1,9 +1,9 @@
 {
   "name": "my-app",
+  "homepage": "https://MihiranWijesekara.github.io/Koncepthive-GYM-Web-Site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MihiranWijesekara.github.io/Koncepthive-GYM-Web-Site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
