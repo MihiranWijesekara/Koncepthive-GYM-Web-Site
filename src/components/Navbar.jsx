@@ -25,7 +25,6 @@ export default function Navbar() {
         minHeight: "60px",
       }}
     >
-      {/* Logo */}
       <a
         href="#"
         style={{
@@ -46,8 +45,6 @@ export default function Navbar() {
           }}
         />
       </a>
-
-      {/* Desktop Nav Links */}
       <div
         className="nav-links"
         style={{
@@ -78,8 +75,6 @@ export default function Navbar() {
           </a>
         ))}
       </div>
-
-      {/* Mobile Menu Icon */}
       <div
         className="mobile-menu-icon"
         style={{ display: "none", cursor: "pointer" }}
@@ -91,8 +86,6 @@ export default function Navbar() {
           <MenuIcon color="#C99B13" size={32} />
         )}
       </div>
-
-      {/* Mobile Menu (animated) */}
       {menuOpen && (
         <div
           initial={{ x: "100%" }}
@@ -141,8 +134,6 @@ export default function Navbar() {
           ))}
         </div>
       )}
-
-      {/* Responsive styles */}
       <style>{`
 				@media (max-width: 900px) {
 					.nav-links {

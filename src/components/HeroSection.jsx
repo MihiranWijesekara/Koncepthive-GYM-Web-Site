@@ -16,7 +16,6 @@ export default function HeroSection() {
         overflow: "hidden",
       }}
     >
-      {/* Background image with opacity */}
       <div
         style={{
           position: "absolute",
@@ -29,12 +28,22 @@ export default function HeroSection() {
           zIndex: 0,
         }}
       />
-      {/* Content */}
       <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
-        {/* Title Line 1 */}
+        <style>{`
+          @media (max-width: 600px) {
+            .hero-join-btn {
+              font-size: 1rem !important;
+              padding: 10px 0 !important;
+              width: 80vw !important;
+              border-radius: 14px !important;
+              margin-top: 16px !important;
+              margin-bottom: 0 !important;
+            }
+          }
+        `}</style>
         <h1
           style={{
-            fontSize: "clamp(36px, 8vw, 96px)", // responsive
+            fontSize: "clamp(36px, 8vw, 96px)",
             fontWeight: 700,
             marginBottom: "10px",
             fontFamily: "Inter, sans-serif",
@@ -45,11 +54,9 @@ export default function HeroSection() {
           <span style={{ color: "#C99B13" }}>FITNESS</span>
           <span style={{ color: "#fff" }}> FOR</span>
         </h1>
-
-        {/* Title Line 2 */}
         <h1
           style={{
-            fontSize: "clamp(36px, 8vw, 96px)", // responsive
+            fontSize: "clamp(36px, 8vw, 96px)",
             fontWeight: 700,
             marginBottom: "20px",
             fontFamily: "Inter, sans-serif",
@@ -60,6 +67,7 @@ export default function HeroSection() {
         </h1>
 
         <button
+          className="hero-join-btn"
           style={{
             background: "#C99B13",
             color: "#111",

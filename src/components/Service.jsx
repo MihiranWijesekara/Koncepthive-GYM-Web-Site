@@ -261,16 +261,13 @@ export default function Service() {
       `}</style>
 
       <section className="svc-section">
-        {/* Label */}
         <div className="svc-label-row">
           <span className="svc-label-line" />
           <span className="svc-label">Our Service</span>
         </div>
 
-        {/* Heading */}
         <h1 className="svc-heading">ELITE LEVEL TRAINING</h1>
 
-        {/* Cards */}
         <div className="svc-grid">
           {services.map((service, i) => (
             <div
@@ -287,7 +284,6 @@ export default function Service() {
                 />
               </div>
 
-              {/* expanding gold divider */}
               <div className="svc-divider" />
 
               <div className="svc-title">{service.title}</div>

@@ -3,7 +3,6 @@ import gymLogo from "../img/ful-gym.jpg";
 export default function AboutUs() {
   return (
     <div style={{ position: "relative" }}>
-      {/* Responsive styles */}
       <style>{`
         @media (max-width: 900px) {
           .aboutus-title, .aboutus-h1, .aboutus-since, .aboutus-story {
@@ -148,7 +147,6 @@ export default function AboutUs() {
           width: "100%",
         }}
       >
-        {/* Right content */}
         <div
           className="aboutus-right"
           style={{
@@ -166,7 +164,6 @@ export default function AboutUs() {
               marginBottom: 40,
             }}
           >
-            {/* Badge */}
             <div
               className="aboutus-badge"
               style={{
@@ -193,7 +190,6 @@ export default function AboutUs() {
                 TRANSFORMED
               </div>
             </div>
-            {/* Image */}
             <img
               className="aboutus-img"
               src={gymLogo}
@@ -208,7 +204,6 @@ export default function AboutUs() {
               }}
             />
           </div>
-          {/* Advantage Section */}
           <div
             className="aboutus-advantage"
             style={{
