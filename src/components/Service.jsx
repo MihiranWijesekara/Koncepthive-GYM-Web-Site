@@ -46,7 +46,7 @@ export default function Service() {
     <>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@400;500;600&display=swap');
-
+        
         :root {
           --gold-primary : #D4AF37;
           --gold-bright  : #F0C84A;

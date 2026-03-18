@@ -9,7 +9,7 @@ export default function AboutUs() {
           fontFamily: "Inter, sans-serif",
           fontWeight: 700,
           fontSize: 18,
-          marginTop: 200,
+          marginTop: 100,
           marginLeft: 100,
         }}
       >

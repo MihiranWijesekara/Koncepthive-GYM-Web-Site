@@ -31,30 +31,34 @@ export default function HeroSection() {
       />
       {/* Content */}
       <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
+        {/* Title Line 1 */}
         <h1
           style={{
-            marginTop: -280,
-            fontSize: "96px",
+            fontSize: "clamp(36px, 8vw, 96px)", // responsive
             fontWeight: 700,
-            marginBottom: "1rem",
+            marginBottom: "10px",
             fontFamily: "Inter, sans-serif",
+            lineHeight: 1.1,
           }}
         >
           <span style={{ color: "#fff" }}>ELITE </span>
           <span style={{ color: "#C99B13" }}>FITNESS</span>
           <span style={{ color: "#fff" }}> FOR</span>
         </h1>
+
+        {/* Title Line 2 */}
         <h1
           style={{
-            marginTop: 10,
-            fontSize: "96px",
+            fontSize: "clamp(36px, 8vw, 96px)", // responsive
             fontWeight: 700,
-            marginBottom: "1rem",
+            marginBottom: "20px",
             fontFamily: "Inter, sans-serif",
+            lineHeight: 1.1,
           }}
         >
-          <span style={{ color: "#fff" }}>EVERY BODY </span>
+          <span style={{ color: "#fff" }}>EVERY BODY</span>
         </h1>
+
         <button
           style={{
             background: "#C99B13",
