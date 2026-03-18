@@ -1,9 +1,15 @@
+import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 
 function Home() {
   return (
-    <>
+    <section
+      style={{
+        background: "#000000",
+      }}
+    >
       <Navbar />
+      <HeroSection />
       {/* <div style={{ textAlign: "center", marginTop: "60px" }}>
         <h1>Welcome to the Home Page</h1>
         <p>This is a simple UI built with React.</p>
@@ -22,7 +28,7 @@ function Home() {
           Get Started
         </button>
       </div> */}
-    </>
+    </section>
   );
 }
 

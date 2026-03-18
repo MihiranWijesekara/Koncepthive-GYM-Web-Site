@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav
       style={{
         background: "#111",
-        color: "#FFD700",
+        color: "#C99B13",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -38,9 +38,9 @@ export default function Navbar() {
           src={gymLogo}
           alt="Gym Logo"
           style={{
-            height: 60,
-            width: 60,
-            borderRadius: 8,
+            height: 70,
+            width: 70,
+            borderRadius: 10,
             background: "#fff",
             marginRight: 10,
           }}
@@ -63,7 +63,7 @@ export default function Navbar() {
             key={link.name}
             href={link.href}
             style={{
-              color: "#FFD700",
+              color: "#C99B13",
               textDecoration: "none",
               padding: "0.25rem 0.75rem",
               borderRadius: 4,
@@ -71,6 +71,7 @@ export default function Navbar() {
               transition: "background 0.2s",
               fontFamily: "Inter, sans-serif",
               fontWeight: 700,
+              fontSize: 18,
             }}
           >
             {link.name}
@@ -85,9 +86,9 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? (
-          <X color="#FFD700" size={32} />
+          <X color="#C99B13" size={32} />
         ) : (
-          <MenuIcon color="#FFD700" size={32} />
+          <MenuIcon color="#C99B13" size={32} />
         )}
       </div>
 
@@ -117,7 +118,7 @@ export default function Navbar() {
             style={{ alignSelf: "flex-end", marginBottom: 32 }}
             onClick={() => setMenuOpen(false)}
           >
-            <X color="#FFD700" size={32} />
+            <X color="#C99B13" size={32} />
           </div>
           {navLinks.map((link) => (
             <a
@@ -125,7 +126,7 @@ export default function Navbar() {
               href={link.href}
               onClick={() => setMenuOpen(false)}
               style={{
-                color: "#FFD700",
+                color: "#C99B13",
                 textDecoration: "none",
                 padding: "1rem 0",
                 fontSize: 20,
