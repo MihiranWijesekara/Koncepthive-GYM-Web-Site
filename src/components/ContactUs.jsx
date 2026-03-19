@@ -4,9 +4,10 @@ export default function ContactUS() {
       <style>{`
         .contactus-wrapper {
           display: flex;
-         margin-left: 100px;
+          justify-content: center;
           align-items: flex-start;
           gap: 48px;
+          padding: 60px 40px 60px 40px;
           font-family: Inter, sans-serif;
           background: #000;
           color: #fff;
@@ -19,8 +20,7 @@ export default function ContactUS() {
         .contactus-info {
           flex: 1;
           max-width: 400px;
-          margin-top: 180px;
-          margin-left: 150px;
+          margin-top: 170px;
         }
         .aboutus-title {
           color: #C99B13;
@@ -123,7 +123,6 @@ export default function ContactUS() {
           }
           .aboutus-h2 {
             font-size: 20px !important;
-            margin-left: 13px !important;
           }
           .contactus-info-text,
           .contactus-info-link {
