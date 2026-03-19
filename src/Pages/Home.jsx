@@ -2,6 +2,7 @@ import AboutUs from "../components/AboutUs";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import Service from "../components/Service";
+import ContactUS from "../components/ContactUs";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <HeroSection />
       <AboutUs />
       <Service />
+      <ContactUS />
       <div style={{ textAlign: "center", padding: "4rem 2rem" }}></div>
       {/* <div style={{ textAlign: "center", marginTop: "60px" }}>
         <h1>Welcome to the Home Page</h1>
