@@ -305,9 +305,10 @@ Error generating stack: `+e.message+`
       `}),(0,f.jsxs)(`section`,{className:`svc-section`,children:[(0,f.jsxs)(`div`,{className:`svc-label-row`,children:[(0,f.jsx)(`span`,{className:`svc-label-line`}),(0,f.jsx)(`span`,{className:`svc-label`,children:`Our Service`})]}),(0,f.jsx)(`h1`,{className:`svc-heading`,children:`ELITE LEVEL TRAINING`}),(0,f.jsx)(`div`,{className:`svc-grid`,children:w.map((n,r)=>(0,f.jsxs)(`div`,{className:`svc-card${e===r?` is-hovered`:``}`,onMouseEnter:()=>t(r),onMouseLeave:()=>t(null),children:[(0,f.jsx)(`div`,{className:`svc-icon-wrap`,children:(0,f.jsx)(`img`,{src:n.img,alt:n.title,className:`svc-icon`})}),(0,f.jsx)(`div`,{className:`svc-divider`}),(0,f.jsx)(`div`,{className:`svc-title`,children:n.title}),(0,f.jsx)(`div`,{className:`svc-desc`,children:n.desc})]},n.title))})]})]})}function ae(){return(0,f.jsxs)(f.Fragment,{children:[(0,f.jsx)(`style`,{children:`
         .contactus-wrapper {
           display: flex;
-         margin-left: 100px;
+          justify-content: center;
           align-items: flex-start;
           gap: 48px;
+          padding: 60px 40px 60px 40px;
           font-family: Inter, sans-serif;
           background: #000;
           color: #fff;
@@ -320,8 +321,7 @@ Error generating stack: `+e.message+`
         .contactus-info {
           flex: 1;
           max-width: 400px;
-          margin-top: 180px;
-          margin-left: 150px;
+          margin-top: 170px;
         }
         .aboutus-title {
           color: #C99B13;
@@ -424,7 +424,6 @@ Error generating stack: `+e.message+`
           }
           .aboutus-h2 {
             font-size: 20px !important;
-            margin-left: 13px !important;
           }
           .contactus-info-text,
           .contactus-info-link {
