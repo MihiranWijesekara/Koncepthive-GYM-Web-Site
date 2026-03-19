@@ -5,10 +5,10 @@ import gymLogo from "../img/bodybuilding-logo.jpg";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Service", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Service", href: "#service" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -135,15 +135,18 @@ export default function Navbar() {
         </div>
       )}
       <style>{`
-				@media (max-width: 900px) {
-					.nav-links {
-						display: none !important;
-					}
-					.mobile-menu-icon {
-						display: block !important;
-					}
-				}
-			`}</style>
+        html {
+          scroll-behavior: smooth;
+        }
+        @media (max-width: 900px) {
+          .nav-links {
+            display: none !important;
+          }
+          .mobile-menu-icon {
+            display: block !important;
+          }
+        }
+      `}</style>
     </nav>
   );
 }

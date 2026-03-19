@@ -1,6 +1,19 @@
+import { useEffect, useState } from "react";
 import coupleGym from "../img/couple-gym.jpg";
+import gymLogo from "../img/brunett-training.jpg";
+import bodybuildingLogo from "../img/young-studio.jpg";
 
 export default function HeroSection() {
+  const images = [coupleGym, gymLogo, bodybuildingLogo];
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3500); // 3.5 seconds per image
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <section
       style={{
@@ -23,12 +36,20 @@ export default function HeroSection() {
           left: 0,
           width: "100%",
           height: "110%",
-          background: `url(${coupleGym}) center/cover no-repeat`,
+          background: `url(${images[current]}) center/cover no-repeat`,
           opacity: 0.9,
           zIndex: 0,
+          transition: "background-image 0.8s ease-in-out",
         }}
       />
-      <div style={{ position: "relative", zIndex: 1, width: "100%" }}>
+      <div
+        style={{
+          position: "relative",
+          zIndex: 1,
+          width: "100%",
+          marginBottom: "160px",
+        }}
+      >
         <style>{`
           @media (max-width: 600px) {
             .hero-join-btn {
@@ -37,7 +58,7 @@ export default function HeroSection() {
               width: 80vw !important;
               border-radius: 14px !important;
               margin-top: 16px !important;
-              margin-bottom: 0 !important;
+              margin-bottom: 10px !important;
             }
           }
         `}</style>
@@ -45,7 +66,7 @@ export default function HeroSection() {
           style={{
             fontSize: "clamp(36px, 8vw, 96px)",
             fontWeight: 700,
-            marginBottom: "10px",
+            marginTop: "10px",
             fontFamily: "Inter, sans-serif",
             lineHeight: 1.1,
           }}
@@ -58,7 +79,7 @@ export default function HeroSection() {
           style={{
             fontSize: "clamp(36px, 8vw, 96px)",
             fontWeight: 700,
-            marginBottom: "20px",
+
             fontFamily: "Inter, sans-serif",
             lineHeight: 1.1,
           }}
@@ -81,7 +102,7 @@ export default function HeroSection() {
             fontFamily: "Inter, sans-serif",
             boxShadow: "0 4px 24px rgba(0,0,0,0.10)",
             transition: "background 0.2s",
-            marginBottom: -70,
+            marginTop: -170,
           }}
         >
           Join Now

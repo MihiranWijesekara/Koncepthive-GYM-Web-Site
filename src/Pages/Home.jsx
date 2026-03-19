@@ -13,11 +13,19 @@ function Home() {
       }}
     >
       <Navbar />
-      <HeroSection />
-      <AboutUs />
-      <Service />
-      <ContactUS />
-      <br></br>
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="about">
+        <AboutUs />
+      </div>
+      <div id="service">
+        <Service />
+      </div>
+      <div id="contact">
+        <ContactUS />
+      </div>
+      <br />
       <Footer />
     </section>
   );
